@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Library -->
+    <script src="lib/jquery-3.1.1/jquery-3.1.1.min.js"></script>
+    <script src="lib/bootstrap-3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko:400,70">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom -->
+    <script src="js/filter.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Feedback Form Design</title>
+</head>
+
+<body>
+    <section class="form">
+        <div class="section-header">
+            <h1>Pichu</h1>
+            <h3>GET, POST, and AJAX method</h3>
+            <h3 class="ajax-result">Enter student ID.</h3>
+        </div>
+        <div class="section-content">
+            <div class="container">
+                <div class = "contact-from">
+                  <div class="col-md-6 form-line">
+                    <!-- GET method -->
+                    <form action="get.njs" method="post" action = "contact-form.php">
+                        <div class="form-group">
+                            <label for="get">Name</label>
+                            <input class="form-control" type="text" name="name" placeholder="Enter Your Name" required>
+                            <br>
+                            <label for="get">Email</label>
+                            <input class="form-control" type="email" name="email" placeholder="Enter Your Email" required>
+                            <br>
+                            <textarea class="form-control"  name="message" row = "4" required>
+                            </textarea><br>
+
+                            <input class="form-control" type="submit" name="email" value=" send message87">
+
+                    <!--       <button class="btn btn-default btn-submit" type="submit">
+                                <i class="fa fa-paper-plane"></i> Submit
+                            </button>--> 
+                        </div>
+                    </form>
+
+
+
+
+
+                  </div>
+
+
+                <div class="col-md-6">
+                    <div class="panel panel-primary filterable">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Users list</h3>
+                            <div class="pull-right">
+                                <button class="btn btn-default btn-xs btn-filter">
+                                    <span class="glyphicon glyphicon-filter"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr class="filters">
+                                    <th>
+                                        <input class="form-control" type="text" placeholder="#" disabled>
+                                    </th>
+                                    <th>
+                                        <input class="form-control" type="text" placeholder="Student ID" disabled>
+                                    </th>
+                                    <th>
+                                        <input class="form-control" type="text" placeholder="Name" disabled>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Student ID</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Student ID</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Student ID</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Student ID</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>E24039091</td>
+                                    <td>吳治緯</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
